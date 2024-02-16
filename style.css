@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p{
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+.choice-button{
+  background-color: rgb(0 0 0);
+  border-color: white;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 0px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.choice-button:hover{
+  opacity: 60%;
+}
+.choice-button:active{
+  opacity: 100%;
+}
+
+.choice-image{
+  object-fit: contain;
+  border-radius: 10%;
+  width: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+.center-div{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.reset-button{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.reset-button:hover{
+  filter: brightness(60%);
+}
+.reset-button:active{
+  filter: brightness(100%);
+}
+
+.emoji{
+  font-size: 36px;
+}
+
+.result{
+  font-size:36px;
+}
+
+.canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
