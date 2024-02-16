@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>rock paper scissors</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="0,0,0">
+  <canvas id="canvas" class="canvas"></canvas>
+  
+  <div class="container">
+    <div>
+      <h1>Rock Paper Scissors</h1>
+      <p>Select one weapon and against the computer:</p>
+    </div>
+    
+    <div class="center-div">
+      <button title="rock" class="choice-button" onclick="rock_clicked();game()"><img class="choice-image" src="image_assets/rock.svg"></button>
+      <button title="paper" class="choice-button" onclick="paper_clicked();game()"><img class="choice-image" src="image_assets/paper.svg"></button>
+      <button title="scissors" class="choice-button" onclick="scissors_clicked();game()"><img class="choice-image" src="image_assets/scissors.svg"></button>
+    </div>
+    
+    <div>
+      <p>
+        you: <label class="emoji" id="player choice">🖕</label>
+        vs 
+        <label class="emoji" id="computer choice">🤬</label> :computer
+      </p>
+      <p class="result" id="result">😅</p>
+      <p>
+        Win: <label id="win count">0</label> , 
+        Lose: <label id="lose count">0</label> , 
+        Tie: <label id="tie count">0</label>
+      </p>
+    </div>
+    
+    <div class="center-div">
+      <button class="reset-button" onclick="reset()">Reset</button>
+    </div>
+  </div>
+
+  <script src="rock_paper_scissors.js"></script>
+  <script src="fallen_text.js"></script>
+</body>
+
+</html>
